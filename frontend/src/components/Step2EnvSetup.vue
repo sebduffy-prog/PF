@@ -375,8 +375,8 @@
                   <path d="M16.24 7.76L14.12 14.12L7.76 16.24L9.88 9.88L16.24 7.76Z" fill="url(#paint0_linear)" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <defs>
                     <linearGradient id="paint0_linear" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#FF5722"/>
-                      <stop offset="1" stop-color="#FF9800"/>
+                      <stop stop-color="#5BA4F5"/>
+                      <stop offset="1" stop-color="#1565C0"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1110,8 +1110,7 @@ onUnmounted(() => {
 }
 
 .step-card.active {
-  border-color: #FF5722;
-  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.08);
+  border-color: #5BA4F5;
 }
 
 .card-header {
@@ -1154,7 +1153,7 @@ onUnmounted(() => {
 }
 
 .badge.success { background: #E8F5E9; color: #2E7D32; }
-.badge.processing { background: #FF5722; color: #FFF; }
+.badge.processing { background: #5BA4F5; color: #FFF; }
 .badge.pending { background: #F5F5F5; color: #999; }
 .badge.accent { background: #E3F2FD; color: #1565C0; }
 
@@ -1935,7 +1934,7 @@ onUnmounted(() => {
 
 .info-value.mbti {
   font-family: 'JetBrains Mono', monospace;
-  color: #FF5722;
+  color: #5BA4F5;
 }
 
 /* Module area */
@@ -2108,7 +2107,7 @@ onUnmounted(() => {
   width: 16px;
   height: 16px;
   border: 2px solid #E5E5E5;
-  border-top-color: #FF5722;
+  border-top-color: #5BA4F5;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -2155,7 +2154,7 @@ onUnmounted(() => {
 }
 
 .special-icon {
-  filter: drop-shadow(0 2px 4px rgba(255, 87, 34, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(91, 164, 245, 0.2));
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 

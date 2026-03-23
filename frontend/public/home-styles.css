@@ -3,26 +3,29 @@
 .home-container {
   min-height: 100vh;
   background: #FFFFFF;
-  font-family: 'Space Grotesk', 'Noto Sans SC', system-ui, sans-serif;
-  color: #000000;
+  font-family: Inter, 'SF Pro Display', system-ui, sans-serif;
+  color: #111827;
 }
 
 /* Top Navigation */
 .navbar {
   height: 60px;
-  background: #000000;
-  color: #FFFFFF;
+  background: #FFFFFF;
+  color: #111827;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .nav-brand {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 800;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #111827;
 }
 
 .nav-links {
@@ -31,19 +34,19 @@
 }
 
 .github-link {
-  color: #FFFFFF;
+  color: #6B7280;
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 
 .github-link:hover {
-  opacity: 0.8;
+  color: #111827;
 }
 
 .arrow {
@@ -100,7 +103,7 @@
   font-weight: 500;
   margin: 0 0 40px 0;
   letter-spacing: -2px;
-  color: #000000;
+  color: #111827;
 }
 
 .gradient-text {

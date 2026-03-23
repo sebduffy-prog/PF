@@ -4,7 +4,7 @@
     <nav class="navbar" :style="s.navbar">
       <div class="nav-brand" :style="s.navBrand">THE PIN FACTORY</div>
       <div class="nav-links" :style="s.navLinks">
-        <a href="https://github.com/nikmcfly/MiroFish-Offline" target="_blank" class="github-link" :style="s.githubLink">
+        <a href="https://github.com/sebduffy-prog/pf" target="_blank" class="github-link" :style="s.githubLink">
           Visit our Github <span>↗</span>
         </a>
       </div>
@@ -37,8 +37,9 @@
         </div>
 
         <div class="hero-right" :style="s.heroRight">
-          <div class="logo-container" :style="s.logoContainer">
-            <img src="../assets/logo/MiroFish_logo_left.jpeg" alt="The Pin Factory Logo" :style="s.heroLogo" />
+          <div :style="s.heroGeometric">
+            <div :style="s.geoBigSquare"></div>
+            <div :style="s.geoSmallSquare"></div>
           </div>
           <button :style="s.scrollDownBtn" @click="scrollToBottom">↓</button>
         </div>
@@ -152,10 +153,10 @@ const mono = 'JetBrains Mono, monospace'
 const sans = 'Space Grotesk, Noto Sans SC, system-ui, sans-serif'
 
 const s = reactive({
-  navbar: { height: '60px', background: '#000', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 40px' },
-  navBrand: { fontFamily: mono, fontWeight: '800', letterSpacing: '1px', fontSize: '1.2rem' },
+  navbar: { height: '60px', background: '#FFFFFF', color: '#111827', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 40px', borderBottom: '1px solid #E5E7EB' },
+  navBrand: { fontFamily: mono, fontWeight: '800', letterSpacing: '3px', fontSize: '1.1rem', color: '#111827', textTransform: 'uppercase' },
   navLinks: { display: 'flex', alignItems: 'center' },
-  githubLink: { color: '#fff', textDecoration: 'none', fontFamily: mono, fontSize: '0.9rem', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '8px' },
+  githubLink: { color: '#6B7280', textDecoration: 'none', fontFamily: mono, fontSize: '0.85rem', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '8px' },
   mainContent: { maxWidth: '1400px', margin: '0 auto', padding: '60px 40px' },
   heroSection: { display: 'flex', justifyContent: 'space-between', marginBottom: '80px', position: 'relative' },
   heroLeft: { flex: '1', paddingRight: '60px' },
@@ -173,9 +174,10 @@ const s = reactive({
   blinkingCursor: { color: '#5BA4F5', fontWeight: '700' },
   decorationSquare: { width: '16px', height: '16px', background: '#5BA4F5' },
   heroRight: { flex: '0.8', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' },
-  logoContainer: { width: '100%', display: 'flex', justifyContent: 'flex-end', paddingRight: '40px' },
-  heroLogo: { maxWidth: '500px', width: '100%' },
-  scrollDownBtn: { width: '40px', height: '40px', border: '1px solid #E5E5E5', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#5BA4F5', fontSize: '1.2rem' },
+  heroGeometric: { width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', paddingRight: '40px', gap: '12px' },
+  geoBigSquare: { width: '200px', height: '200px', border: '1px solid #E5E7EB', background: 'rgba(91,164,245,0.05)' },
+  geoSmallSquare: { width: '80px', height: '80px', background: '#5BA4F5', alignSelf: 'flex-end', marginRight: '40px' },
+  scrollDownBtn: { width: '40px', height: '40px', border: '1px solid #E5E7EB', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#5BA4F5', fontSize: '1.2rem' },
   dashboardSection: { display: 'flex', gap: '60px', borderTop: '1px solid #E5E5E5', paddingTop: '60px', alignItems: 'flex-start' },
   leftPanel: { flex: '0.8', display: 'flex', flexDirection: 'column' },
   panelHeader: { fontFamily: mono, fontSize: '0.8rem', color: '#999', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' },

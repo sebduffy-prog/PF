@@ -436,35 +436,35 @@ onUnmounted(() => {
 .brand {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 3px;
   cursor: pointer;
+  text-transform: uppercase;
+  color: #111827;
 }
 
 .view-switcher {
   display: flex;
-  background: #F5F5F5;
-  padding: 4px;
-  border-radius: 6px;
-  gap: 4px;
+  background: #F9FAFB;
+  padding: 3px;
+  border: 1px solid #E5E7EB;
+  gap: 2px;
 }
 
 .switch-btn {
   border: none;
   background: transparent;
-  padding: 6px 16px;
+  padding: 5px 14px;
   font-size: 12px;
   font-weight: 600;
-  color: #666;
-  border-radius: 4px;
+  color: #6B7280;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .switch-btn.active {
-  background: #FFF;
-  color: #000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: #5BA4F5;
+  color: #FFF;
 }
 
 .status-indicator {
@@ -513,7 +513,7 @@ onUnmounted(() => {
   background: #CCC;
 }
 
-.status-indicator.processing .dot { background: #FF5722; animation: pulse 1s infinite; }
+.status-indicator.processing .dot { background: #5BA4F5; animation: pulse 1s infinite; }
 .status-indicator.completed .dot { background: #4CAF50; }
 .status-indicator.error .dot { background: #F44336; }
 
